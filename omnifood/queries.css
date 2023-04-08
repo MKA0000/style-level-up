@@ -1,0 +1,288 @@
+@media(max-width: 84em) {
+    
+    .hero-container {
+        max-width: 120rem;
+    }
+
+    .hero_header {
+        font-size: 4.4rem;
+    }
+
+    .testimonials_gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 75em){
+    
+    html {
+        font-size: 56.25%;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .s_header {
+        font-size: 3.6rem;
+    }
+
+    .step-header {
+        font-size: 2.4rem;
+    }
+
+    .header_nav-list {
+        gap: 3.2rem;
+    }
+
+    .testimonials_text-container {
+        padding: 9.6rem 3.2rem;
+    }
+
+
+    /* next time i will use display grid as a general purpose class */
+    .s-how_steps,
+    .s-pricing_plan,
+    .footer_content,
+    .meal, .plan-include {
+        row-gap: 6.4rem;
+        column-gap: 4.8rem;
+    }
+
+    .hero-container {
+        gap: 4.8rem;
+    }
+}
+
+@media(max-width: 59em) {
+
+    html {
+        font-size: 50%;
+    } 
+
+    .btn-mobile-nav {
+        display: block;
+        z-index: 100;
+    }
+
+    .header_nav-list {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        transform: translateX(100%);
+        
+        flex-direction: column;
+        gap: 4.8rem;
+        transition: all 500ms;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;         
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .nav-open .header_nav-list {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+
+    }
+
+    .nav-list_item:link, 
+    .nav-list_item:visited {
+        font-size: 3rem;
+    }
+
+   
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .heroTxtBox,
+    .hero_img-box {
+        text-align: center;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .hero-img {
+        width: 60%;
+    }
+
+
+    
+    .s-featured_logos img {
+        height: 2.4rem;
+    }
+
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+
+    .s-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials_gallery {
+        grid-template-columns: repeat(6,1fr);
+    }
+
+
+    .signup {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .user-data {
+        grid-template-columns: 1fr;
+    }
+
+    .signup-button {
+        margin-top: 1.2rem;
+    }
+
+}
+
+@media(max-width: 44em) {
+
+    .s_header {
+        margin-bottom: 4.8rem;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    .meal {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .meal-diet {
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+
+    .plan-include {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer_content {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .resources,
+    .company,
+    .account {
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+
+    .content_media {
+        grid-row-start: 2;
+        grid-column: 1 / span 3;
+    }
+
+    .contact {
+        grid-row-start: 2;
+        grid-column: 4 / span 3;
+    }
+
+    .plan-one,
+    .plan-two {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 34em) {
+
+    .s-hero {
+        padding: 2.4rem 0 6.4rem;
+    }
+
+    .hero-container {
+        padding: 0 3.2rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .btn:link, 
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .s-featured_logos img {
+        height: 1.2rem;
+    }
+
+    .step-image:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-image:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .testimonials_customers,
+    .s-pricing_plan,
+    .plan-include,
+    .s-how_steps,
+    .signup,
+    .meal {
+        grid-template-columns: 1fr;
+    }
+
+    .meal-diet {
+        grid-column: 1;
+    }
+
+    .signup_img {
+        height: 32rem;
+        grid-row: 1;
+        background-position-y: 30%;
+    }
+
+    .testimonials_gallery {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .signup_form {
+        padding: 3.2rem;
+    }
+
+    .signup-button, 
+    .signup-button:link, 
+    .signup-button:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .footer_content {
+        row-gap: 4.8rem;
+    }
+}
+
+
